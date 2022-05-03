@@ -295,11 +295,18 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(../img/laptop-front.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Parallax Code */
 }
 
 .section__title--services {

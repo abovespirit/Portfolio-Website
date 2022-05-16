@@ -14,7 +14,8 @@
     --fw-bold: 900;
     
     --clr-light: #fff;
-    --clr-dark: #303030;
+    --clr-light-grey: #303030;
+    --clr-dark: #222222;
     --clr-accent: #16e0bd;
     
     --fs-h1: 3rem;
@@ -44,8 +45,8 @@
 
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-light-grey);
+    color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -138,7 +139,7 @@ h3 { font-size: var(--fs-h3) }
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 12em;
 }
 
 .logo {
@@ -263,7 +264,8 @@ header {
     .intro {
         display: grid;
         width: min-content;
-        margin: 0 auto;
+        margin: --fs-h2 auto;
+        text-align: left;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
@@ -427,7 +429,7 @@ header {
 
 .contact-me {
     background-color: var(--clr-dark);
-    background-image: url(../img/laptop-front.jpg);
+    background-image: url(../img/laptop-side.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);

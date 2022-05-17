@@ -39,10 +39,17 @@
 /* General styles */
 
 /* endable this to add smooth scrolling */
-/* html {
+ html {
     scroll-behavior: smooth;
-} */
+} 
 
+#canvas1 {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#636363,#303030 );
+}
 
 body {
     background: var(--clr-light-grey);

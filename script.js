@@ -9,7 +9,7 @@ let particlesArray;
 let mouse = {
     x: null,
     y: null,
-    radius: (canvas.height/80) * (canvas.width/80),
+    radius: (canvas.height/120) * (canvas.width/120),
 
 }
 
@@ -103,15 +103,26 @@ function animate() {
     connect();
 }
 
+//resize event
+window.addEventListener('resize',
+    function(){
+        canvas.width = innerWidth;
+        canvas.height = this.innerHeight;
+        mouse.radius = ((canvas.height/120) * (canvas.height/120));
+        init()
+    })
 // check if particles are close enough to draw line between them
 function connect(){
+    let opacityValue = 1;
     for (let a = 0; a < particlesArray.length; a++) {
         for (let b = a; b < particlesArray.length; b++) {
             let distance = (( particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
             + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
             if (distance < (canvas.width/7) * (canvas.height/7)) {
+                opacityValue = 1 - (distance/20000);
                 // Line Colors
-                ctx.strokeStyle= '#16e0bd';
+                // Add a 5 back to rgba to make violent
+                ctx.strokeStyle= 'rgba(22,224,189,5' + opacityValue + ')';
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(particlesArray[a].x, particlesArray[a].y);

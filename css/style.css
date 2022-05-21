@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+/* Custom Design Properties */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: "Open Sans Bold", sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
     
     --fw-reg: 300;
@@ -15,7 +15,7 @@
     
     --clr-light: #fff;
     --clr-light-grey: #303030;
-    --clr-dark: #222222;
+    --clr-dark: #1d1d1d;
     --clr-accent: #16e0bd;
     
     --fs-h1: 3rem;
@@ -38,7 +38,7 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
+/* smooth scrolling */
  html {
     scroll-behavior: smooth;
 } 

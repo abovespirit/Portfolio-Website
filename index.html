@@ -16,164 +16,220 @@
 
     </head>
     <body>
-        <!-- Animation Starts After This Line-->
-        <canvas id = "canvas1"></canvas>
-        <script src = "script.js"></script>
     
         <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
+            <button class="nav-toggle hidden" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
+                <!-- <img src="img/Logo.png" alt="" class="nav__list"> -->
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                 </ul>
+
             </nav>
         </header>
         
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I'm <strong>Colby Christopher</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="img/dev-jane-01.jpg" alt="Headshot Picture" class="intro__img">
+                Hello, 
+                <br>
+                I'm <strong>Colby</strong> 
+                <br>
+                <strong>Christopher</strong> 
         </section>
+         
+        <!-- Animation Starts After This Line-->
+         <canvas id = "canvas1"></canvas>
+         <script src = "js/script.js"></script>
+
         
         
-        <!-- My services -->
+        
+        <!-- What I do -->
         <section class="my-services" id="services">
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
+                    <h3>Game Ready Assets</h3>
+                    <p>My process involves creating high-poly assets with clean topology and then utilizing the high-to-low baking process to create optimized, visually appealing models suitable for use in real-time environments.</p>
+                </div> 
                 
                 <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
+                    <h3>Hard Surface Modeling</h3>
+                    <p>I specialize in creating hard surface models that accurately depict solid, man-made objects such as weapons, vehicles, and architecture. With a focus on precise detailing and clean topology.</p>
+                </div> 
             
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Designer & developer based out of Orlando, FL</p>
-           
-           <div class="about-me__body">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
-           
-           <img src="img/Colby-Banner.jpg" alt="Jane leaning against a bus" class="about-me__img">
+                <div class="service">
+                    <h3>Programming</h3>
+                    <p>I possess fundamental proficiency in programming languages such as HTML, CSS, Javascript, and C#, allowing me to effectively implement these languages in various projects.</p>
+                </div> 
+        </div> 
+            
+        <a href="https://abovespirit.gumroad.com/"class="btn">My Store</a>
         </section>
         
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            <h2 class="section__title section__title--work">Various Projects</h2>
+            <p class="section__subtitle section__subtitle--work">A timeline of my work since I first began</p>
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item.html" class="portfolio__item">
                     <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item-2.html" class="portfolio__item">
                     <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item-3.html" class="portfolio__item">
                     <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item-4.html" class="portfolio__item">
                     <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 05 -->
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item-5.html" class="portfolio__item">
                     <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item-6.html" class="portfolio__item">
                     <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
                 </a>
                 
-                <!-- Portfolio item 07 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
-                </a>
                 
                 <!-- Portfolio item 08 -->
-                <a href="#" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item-8.html" class="portfolio__item">
                     <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 09 -->
-                <a href="#" class="portfolio__item">
+                <a href="Portfolio-Items/portfolio-item-9.html" class="portfolio__item">
                     <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
                 </a>
                 
-                <!-- Portfolio item 0 0-->
-                <a href="#" class="portfolio__item">
+                <!-- Portfolio item 10-->
+                <a href="Portfolio-Items/portfolio-item-10.html" class="portfolio__item">
                     <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
                 </a>
+
+                <!-- Portfolio item 11-->
+                <a href="Portfolio-Items/portfolio-item-11.html" class="portfolio__item">
+                    <img src="img/portfolio-11.jpg" alt="" class="portfolio__img">
+                </a>
             </div>
+            
         </section>
         
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">About me</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based out of Orlando, FL</p>
+           
+           <div class="about-me__body">
+               <p>My passion for digital work began at a young age with photography and film. I was always fascinated by the way I could capture moments and tell stories through images. This led me to experiment with different techniques and editing tools, and eventually, I found myself drawn to the world of programming.</p>
+               <p>I started to explore programming and discovered the endless possibilities it offered for creative expression. I became captivated by the idea of using code to create animations and interactive experiences, and I knew that I wanted to pursue this field further.</p>
+               <p>This interest in programming eventually led me to the world of 3D modeling. I was intrigued by the idea of creating virtual environments and objects that could be explored and interacted with. I began to study 3D modeling and was amazed by the intricate details and lifelike qualities that could be achieved with just a computer.</p>
+               <p>Now, I am fully immersed in the digital world and I am constantly striving to improve my skills and explore new possibilities. I am passionate about creating digital experiences that are both beautiful and functional, and I am dedicated to producing work that pushes the boundaries of what is possible in this field.</p>
+               <p>In my free time, I pursue a variety of interests that keep me both intellectually and physically stimulated. Music has always been a major passion of mine, and I enjoy learning music theory and playing the guitar and piano. I find that playing music helps me to relax, unleash my creativity, and express myself in new ways.</p>
+               <p>I am also a big fan of traveling and discovering new places, immersing myself in new cultures, and trying new foods. These experiences broaden my horizons and provide a fresh perspective on life. </p>
+               <p>Additionally, I am dedicated to maintaining a healthy lifestyle. I enjoy cooking nutritious meals and regularly engage in physical activity to keep my body and mind in peak condition. Whether through music, travel, or fitness, I strive to make the most out of every day and live life to the fullest.</p>
+           </div>
+           
+           <img src="img/Colby-Banner.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+
+        <!-- Knowledge -->
+           <section class="applications" id="applications">
+            <h2 class="section__title section__title--applications">Knowledge</h2>
+            <p class="section__subtitle section__subtitle--applications">experience using...</p>
+
+
+            <div class="about-me__body">
+                <p>As a lifelong learner, I am constantly striving to expand my knowledge and skill sets. My passion for creativity and technology has driven me to master a wide range of tools and techniques.</p>
+                <p>I attended the University of Central Florida to pursue a degree in Game Design. During my time at UCF, I gained valuable experience in the field through coursework and various game development projects, helping to develop my skills as a 3D artist and game designer.</p>
+                <p>I have honed my skills in graphic design by mastering Adobe Photoshop and Premiere, as well as other Adobe products. Additionally, I have a basic understanding of the fundamentals of front-end development and have worked with React.js libraries.</p>
+                <p>In 3D modeling, I have gained expertise in Marmoset Toolbag, Autodesk Maya, 3ds Max, Unity, Unreal Engine, Substance Painter, Blender, and ZBrush. These powerful tools have allowed me to bring my ideas to life and create visually stunning and functional designs.</p>
+                <p>I believe that staying current and well-versed in a variety of fields is essential for success in today's rapidly changing world. That is why I am constantly seeking out new learning opportunities and challenges to push my boundaries and develop new skills.</p>
+            </div>
+            <body>
+    <span class="Sphere"></span>
+                
+    <!-- Including the TagCloud.js script CDN in the document    -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'HTML', 'CSS', 'JAVASCRIPT',
+            'C#', 'Unity', 'Autodesk', 'Marmoset Toolbag', 'Unreal Engine 5',
+            '3ds Max', 'Blender',
+            'Autodesk Maya', 'Substance Painter', 'Chaos: V-Ray',
+            'Photoshop', 'Adobe Suite', 'Premiere', 
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 290,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'normal',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 135,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#16e0bd ';
+        document.querySelector('.Sphere').style.color = color;
+    </script>
+</body>
+        </section>    
+              
         <!-- Contact Me -->
         <section class="contact-me" id="contact">
             <h2 class="section__title section__title--contact">Contact Me</h2>
             <div class="contact">
-                
-                <div class="contact">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>If you have any questions or would like to get in touch with me regarding potential projects or collaborations, please feel free to reach out through my email below. I will do my best to respond to your message in a timely manner. You can also connect with me on LinkedIn, or see my newest projects on ArtStation. I look forward to hearing from you!</p>
                 </div> <!-- / contact -->
             </div> <!-- / contact -->
             
-            <a href="#work" class="btn">Contact Me</a>
+            <a href="mailto:crc91118@gmail.com"  class="btn">Contact Me</a>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:crc91118@gmail.com" class="footer__link">crc91118@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
+                    <a class="social-list__link" href="https://discord.gg/DqA2HWWVBB">
+                        <i class="fab fa-discord"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
+                    <a class="social-list__link" href="https://www.artstation.com/colby_christopher">
+                        <i class="fab fa-artstation"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
+                    <a class="social-list__link" href="www.linkedin.com/in/colby-christopher">
+                        <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
@@ -182,6 +238,7 @@
                     </a>
                 </li>
             </ul>
+            <h6>Copyright © 2023. All rights reserved. </h6>
         </footer>
         
         

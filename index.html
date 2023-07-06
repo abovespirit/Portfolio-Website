@@ -15,12 +15,12 @@
 </head>
 
 <body>
+    <button class="nav-toggle hidden" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
     <header>
-        <button class="nav-toggle hidden" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
         <nav class="nav">
-            <!-- <img src="img/Logo.png" alt="" class="nav__list"> -->
+            <img src="img/Logo.png" alt="" class="nav__list" id="logo"">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
@@ -32,11 +32,14 @@
     <!-- Introduction -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hello,
-            <br>
-            I'm <strong>Colby</strong>
-            <br>
-            <strong>Christopher</strong>
+            <div class="hello">
+                Hello,
+                <br>
+                I'm <strong>Colby</strong>
+                <br>
+                <strong>Christopher</strong>
+            </div>
+        </h1>
     </section>
     <!-- Animation Starts After This Line-->
     <canvas id="canvas1"></canvas>

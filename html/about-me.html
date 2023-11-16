@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Colby's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <button class="nav-toggle hidden" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <header>
+        <nav class="nav">
+            <img src="img/Logo.png" alt="" class="nav__list" id="logo">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="../index.html#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About me</h2>
+        <p class="section__subtitle section__subtitle--about">3D Generalist based out of Orlando, FL</p>
+
+        <div class="about-me__body">
+            <p>My name is Colby Christopher. My passion for the digital creative field first began at a young age with photography and film. 
+                I was always fascinated by the way I could capture moments, relive experiences, and tell stories through images and videos. 
+                This led me to experiment with different techniques and editing tools, and eventually, I found myself drawn to the world of programming.</p>
+            <p>I started to explore programming and discovered the endless possibilities it offered for creative expression.
+                 I became interested in the idea of using code to create websites and interactive experiences, and I knew that I wanted to pursue this field further.</p>
+            <p>Around this same time, I was introduced to 3D modeling through a series of high school classes. I was intrigued by the idea of creating virtual enviroments and objects that could be explored and interacted with. 
+                I began to study 3D modeling and was amazed by the intricate details and lifelike qualities that could be achieved with just a computer. This was the moment that I fell in love with the world of 3D. </p>
+            <p>Now, I am fully immersed in the digital world and I am constantly striving to improve my skills and explore new possibilities. I am passionate about creating digital experiences that are both aesthetically pleasing and functional, 
+                and I am dedicated to producing work that pushes the boundaries of what is possible in this field.</p>
+            <p>In my free time, I pursue a variety of interests that keep me both intellectually and physically stimulated. Music has always been a major passion of mine, and I enjoy learning music theory and playing the guitar and piano. 
+                I find that playing music helps me to relax, unleash my creativity, and express myself in new ways.</p>
+            <p>Additionally, I am dedicated to maintaining a healthy lifestyle. I enjoy cooking nutritious meals and regularly engage in physical activity to keep my body and mind in peak condition. Whether through music, travel, or fitness, 
+                I strive to make the most out of every day and live life to the fullest.
+            </p>
+        </div>
+        
+
+        <div class="about-me__body">
+            <p class="section__subtitle section__subtitle--applications">Education</p>
+            <p>I attended the University of Central Florida to pursue a degree in Digitial Media, on the Game Design Track. During my time at UCF, 
+                I gained valuable experience in the field through coursework and various game development projects, helping to develop my skills as a 3D artist and game designer.</p>
+            <p>I have honed my skills in graphic design by mastering Adobe Photoshop and Premiere, as well as other Adobe products. Additionally, I have a basic understanding of the 
+                fundamentals of front-end development and have worked with React.js libraries.</p>
+
+                <body>
+                    <span class="Sphere"></span>
+
+            <p>In 3D modeling, I have gained experience in using Marmoset Toolbag, Autodesk Maya, 3ds Max, Unity, Unreal Engine, Substance Painter, Blender, and ZBrush. These powerful tools 
+                have allowed me to bring my ideas to life and create interesting designs.</p>
+            <p>
+                I am constantly striving to expand my knowledge and skill sets. My passion for creativity and technology has driven me to master a wide range of tools and techniques.
+                I believe that staying current and well-versed in a variety of fields is essential for success in today's rapidly changing world. That is why I am constantly seeking 
+                out new learning opportunities and challenges to push my boundaries and develop new skills.
+                </p>
+        </div>
+
+
+        <img src="../img/Website-Content/Colby-Banner.jpg" alt="" class="about-me__img">
+    </section>
+
+        <!-- Rotating Skill Sphere -->
+            <!-- Including the TagCloud.js script CDN in the document    -->
+            <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+            <script>
+                const Texts = [
+                    'HTML', 'CSS', 'JAVASCRIPT',
+                    'C#', 'Unity', 'Autodesk', 'Marmoset Toolbag', 'Unreal Engine 5',
+                    '3ds Max', 'Blender',
+                    'Autodesk Maya', 'Substance Painter', 'Chaos: V-Ray',
+                    'Photoshop', 'Adobe Suite', 'Premiere',
+                ];
+
+                var tagCloud = TagCloud('.Sphere', Texts, {
+
+                    // Sphere radius in px
+                    radius: 290,
+
+                    // animation speed
+                    // slow, normal, fast
+                    maxSpeed: 'normal',
+                    initSpeed: 'fast',
+
+                    // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+                    direction: 135,
+
+                    // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+                    keep: true
+
+                });
+
+                // Giving color to each text in sphere
+                var color = '#16e0bd ';
+                document.querySelector('.Sphere').style.color = color;
+            </script>
+            </body>
+            </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://discord.gg/DqA2HWWVBB">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.artstation.com/colby_christopher">
+                    <i class="fab fa-artstation"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="www.linkedin.com/in/colby-christopher">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+        <h6>Copyright © 2023. All rights reserved.  -  Last Updated: 11/14/23 </h6>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

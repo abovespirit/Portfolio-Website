@@ -33,7 +33,7 @@ class Particle {
     // method to draw individual particle
     draw() {
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false );
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 3, false );
         ctx.fillStyle = '#fff';
         ctx.fill();
     }
@@ -78,13 +78,13 @@ class Particle {
 //create particle array
 function init() {
     particlesArray = [];
-    let numberOfParticles = (canvas.height * canvas.width) / 9000;
+    let numberOfParticles = (canvas.height * canvas.width) / 5000;
     for (let i = 0; i < numberOfParticles; i++) {
-        let size = (Math.random() * 5) + 1;
+        let size = (Math.random() * 2) + 1;
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let y = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
-        let directionX = (Math.random() * 1) - 1;
-        let directionY = (Math.random() * 1) - 1;
+        let directionX = (Math.random() * 2) - 1;
+        let directionY = (Math.random() * 2) - 1;
         let color = '#8C5523';
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
